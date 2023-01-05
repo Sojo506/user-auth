@@ -1,8 +1,6 @@
 import Layout from '../components/Layout';
 import Link from 'next/link';
 import styles from '../styles/Login.module.css';
-import { FcGoogle } from 'react-icons/fc';
-import { AiFillGithub } from 'react-icons/ai';
 import { HiAtSymbol, HiFingerPrint, HiOutlineUser } from 'react-icons/hi';
 import { useState } from 'react';
 import { useFormik } from 'formik';
@@ -10,7 +8,7 @@ import { registerValidate } from '../lib/validate';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 
-export default function login() {
+export default function Register() {
   const [show, setShow] = useState({
     password: false,
     cpassword: false,

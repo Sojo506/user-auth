@@ -11,7 +11,7 @@ import validate from '../lib/validate';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 
-export default function login() {
+export default function Login() {
   const [show, setShow] = useState(false);
   const router = useRouter();
 
