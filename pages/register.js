@@ -135,7 +135,7 @@ export default function Register() {
 
           {/* bottom */}
           <p className="text-center text-gray-400">
-            Have an account?{' '}
+            Have an account?
             <Link href={'/login'} className="text-blue-700">
               Sign In
             </Link>
