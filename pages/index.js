@@ -67,7 +67,7 @@ export async function getServerSideProps(context) {
   });
 
   // if user isn't is auth
-  if (!session) return { redirect: { destination: '/login', permanent: false } };
+  if (!session) return { redirect: { destination: 'https://user-auth-ivory.vercel.app/login', permanent: false } };
 
   // if user is is auth
   return {

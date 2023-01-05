@@ -30,18 +30,18 @@ export default function Login() {
       redirect: false,
       email: values.email,
       password: values.password,
-      callbackUrl: '/',
+      callbackUrl: 'https://user-auth-ivory.vercel.app',
     });
 
     if (status.ok) router.push(status.url);
   }
 
   async function handleGoogleSignin() {
-    signIn('google', { callbackUrl: '/' });
+    signIn('google', { callbackUrl: 'https://user-auth-ivory.vercel.app' });
   }
 
   async function handleGitHubSignin() {
-    signIn('github', { callbackUrl: '/' });
+    signIn('github', { callbackUrl: 'https://user-auth-ivory.vercel.app' });
   }
 
   return (
@@ -121,7 +121,7 @@ export default function Login() {
           {/* bottom */}
           <p className="text-center text-gray-400">
             Do not have an account yet?
-            <Link href={'/register'} className="text-blue-700">
+            <Link href={'https://user-auth-ivory.vercel.app/register'} className="text-blue-700">
               Sign Up
             </Link>
           </p>

@@ -34,10 +34,10 @@ export default function Register() {
       body: JSON.stringify(values),
     };
 
-    await fetch('http://localhost:3000/api/auth/signup', options)
+    await fetch('https://user-auth-ivory.vercel.app/api/auth/signup', options)
       .then((res) => res.json())
       .then((data) => {
-        if (data) router.push('http://localhost:3000/login');
+        if (data) router.push('https://user-auth-ivory.vercel.app/login');
       });
   }
 
@@ -136,8 +136,8 @@ export default function Register() {
           {/* bottom */}
           <p className="text-center text-gray-400">
             Have an account?
-            <Link href={'/login'} className="text-blue-700">
-              Sign In
+            <Link href={'https://user-auth-ivory.vercel.app/login'} className="text-blue-700">
+               Sign In
             </Link>
           </p>
         </section>
